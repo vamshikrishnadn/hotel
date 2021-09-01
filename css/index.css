@@ -1,0 +1,154 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: #fff;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.color {
+  background: #fba207;
+}
+.navbar {
+  background: #040404;
+  z-index: 2;
+}
+.navbar * {
+  color: #fbc407 !important;
+}
+.navbar a:hover {
+  color: #fff !important;
+}
+.background {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)),
+    url(../Images/shawn-ang-nmpW_WwwVSc-unsplash.jpg) center/cover fixed;
+  height: 100vh;
+}
+.content {
+  background: #ffc602a3;
+  border-top: 2px solid #fba207;
+  position: relative;
+  bottom: 10%;
+}
+#Categories img {
+  transition: 0.5s;
+  width: 100%;
+}
+#Categories img:hover {
+  transform: scale(1.3);
+}
+
+#take {
+  background: #010101;
+}
+#take .card-footer {
+  background-color: transparent !important;
+}
+#take .card {
+  position: relative;
+}
+#take .card .content1 {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  background: #000000a8;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 1s;
+}
+#take .card .content1:hover {
+  opacity: 1;
+}
+#take .card h5 {
+  color: #fba207;
+}
+#take a {
+  color: #fba207 !important;
+  position: relative;
+}
+#take a:hover {
+  text-decoration: none;
+  color: #fff !important;
+}
+#take a:before {
+  top: -10%;
+  width: 100%;
+  height: 10%;
+  border-radius: 2px;
+  background: #fba207;
+  position: absolute;
+  content: '';
+  transition: transform 0.5s;
+  transform: scale(0);
+}
+#take a:hover:before {
+  transform: scale(1);
+}
+#take .card .content1 i {
+  padding: 0.7rem;
+  border: 1px solid #9f9c9c;
+  cursor: pointer;
+  color: #fff;
+}
+#take .card img {
+  width: 245px;
+  height: 327px;
+}
+.card .content2 {
+  top: 0%;
+  width: 100%;
+  height: 84.5%;
+  border-radius: 2px;
+  background: #000000a8;
+  position: absolute;
+  transition: all 1s;
+  z-index: 3;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+.card:hover .content2 {
+  transform: scaleY(1);
+  opacity: 1;
+  transform-origin: bottom;
+}
+.bg {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url(../Images/ella-olsson-fxJTl_gDh28-unsplash.jpg) center/cover fixed;
+  color: #fff;
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+}
+.bg2 {
+  background: url(../Images/brooke-lark-4J059aGa5s4-unsplash.jpg) center/cover fixed;
+}
+.bg4 {
+  background: rgba(6, 196, 224, 0.5);
+  color: #fff;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.position-relative img {
+  height: 310px;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  #take .card img {
+    width: 100%;
+    height: 100%;
+  }
+  .card .content2 {
+    top: 0%;
+    width: 100%;
+    height: 87%;
+  }
+}
